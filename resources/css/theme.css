@@ -1,0 +1,116 @@
+/* Dark Blue Theme Styles */
+:root {
+    --primary-color: #1a237e;
+    --secondary-color: #1565c0;
+    --background-dark: #121212;
+    --background-light: #1e1e1e;
+    --text-primary: #ffffff;
+    --text-secondary: #cccccc;
+    --border-color: #333333;
+    --hover-color: #2196f3;
+}
+
+body {
+    background-color: var(--background-dark);
+    color: var(--text-primary);
+    font-family: var(--font-sans);
+}
+
+/* Header Styles */
+.navbar {
+    background-color: var(--background-light);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.navbar-brand {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.nav-link {
+    color: var(--text-secondary);
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--hover-color);
+}
+
+/* Card Styles */
+.card {
+    background-color: var(--background-light);
+    border: 1px solid var(--border-color);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.card-header {
+    background-color: var(--primary-color);
+    color: var(--text-primary);
+}
+
+/* Button Styles */
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+/* Form Styles */
+.form-control {
+    background-color: var(--background-light);
+    border-color: var(--border-color);
+    color: var(--text-primary);
+}
+
+.form-control:focus {
+    border-color: var(--hover-color);
+    box-shadow: 0 0 0 0.2rem rgba(33, 150, 243, 0.25);
+}
+
+/* Table Styles */
+.table {
+    background-color: var(--background-light);
+    color: var(--text-primary);
+}
+
+.table th {
+    background-color: var(--primary-color);
+    color: var(--text-primary);
+}
+
+/* Alert Styles */
+.alert {
+    border: 1px solid var(--border-color);
+}
+
+.alert-success {
+    background-color: #1b5e20;
+    border-color: #1b5e20;
+}
+
+.alert-danger {
+    background-color: #b71c1c;
+    border-color: #b71c1c;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--background-dark);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--secondary-color);
+}
